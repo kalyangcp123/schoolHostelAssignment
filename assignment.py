@@ -1,8 +1,8 @@
 def schoolHostelAssignment(class_max_size, AV, BV, ANV, BNV, NA):
 
     id = input("enter the roll number:")
-    # if len(id) != 4:
-    #     raise Exception('id must be 4 digits')  # roll number should be 4 digits
+    if len(id) != 4:
+        raise Exception('id must be 4 digits')  # roll number should be 4 digits
 
     section = input("enter the class:")
     if section != 'A' and section != 'B':
